@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="PixelMinigame:jar">
+    <output-path>$USER_HOME$/Desktop</output-path>
+    <root id="archive" name="PixelMinigame.jar">
+      <element id="module-output" name="PixelMinigame" />
+    </root>
+  </artifact>
+</component>

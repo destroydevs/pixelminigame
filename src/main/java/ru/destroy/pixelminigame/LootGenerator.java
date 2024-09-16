@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
+// Created by AI
 public class LootGenerator {
 
     private static final Random random = new Random();

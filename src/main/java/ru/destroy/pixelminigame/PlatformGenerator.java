@@ -11,6 +11,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 
+// Created by AI
 public class PlatformGenerator {
     private static final int PLATFORM_SIZE = 3;
     private static final int CHEST_OFFSET = 1;

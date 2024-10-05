@@ -31,9 +31,9 @@ public final class PixelMinigame extends JavaPlugin {
         Bukkit.getScheduler().runTaskTimer(this, () -> {
             for (Player p : Bukkit.getOnlinePlayers()) {
                 Scoreboard scoreboard = p.getScoreboard();
-                Team team = scoreboard.getTeam(p.getUniqueId() + "_gamepixel");
+                Team team = scoreboard.getTeam(p.getName());
                 if (team == null) {
-                    team = scoreboard.registerNewTeam(p.getUniqueId() + "_gamepixel");
+                    team = scoreboard.registerNewTeam(p.getName());
                 }
                 int win = wins.getOrDefault(p.getUniqueId(),0);
 

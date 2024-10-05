@@ -1,5 +1,5 @@
 name: PixelMinigame
-version: '0.1-beta'
+version: '0.2-beta'
 main: ru.destroy.pixelminigame.PixelMinigame
 api-version: '1.16'
 commands:

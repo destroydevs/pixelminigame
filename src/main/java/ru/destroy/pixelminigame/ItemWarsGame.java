@@ -289,8 +289,8 @@ public class ItemWarsGame implements Listener {
 
 
     BukkitTask task;
-    public void startBarTask(Runnable runnable, BukkitTask task) {
-        task = new BukkitRunnable() {
+    public void startBarTask(Runnable runnable) {
+        this.task = new BukkitRunnable() {
             @Override
             public void run() {
 
@@ -403,7 +403,7 @@ public class ItemWarsGame implements Listener {
                     startBarTask(() -> {
                         try {
                             if (p.getGameMode() != GameMode.SPECTATOR) {
-                                if (!task.isCancelled()) {
+                                if (!this.task.isCancelled()) {
                                     p.getInventory().addItem(getRandomItem());
                                 }
                                 p.playSound(p.getLocation(), Sound.ENTITY_ITEM_PICKUP, 1, 1);
@@ -412,7 +412,7 @@ public class ItemWarsGame implements Listener {
                             e.printStackTrace();
                         }
 
-                    },task);
+                    });
                 }
 
             }, 0, 8, TimeUnit.SECONDS);
